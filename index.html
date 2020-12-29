@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Marker</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<div class="row wrapper">
+			<div class="col-4 wrapper__marker">
+				<!-- 
+					marker--blue
+					marker--red
+					marker--yellow
+					marker--black
+					marker--violet
+					marker--green
+				 -->
+				<div id="marker" class="marker--blue">
+					<div class="marker__fill">
+						<div class="marker__color"></div>
+					</div>
+					<div class="marker__img"></div>
+				</div>
+			</div>
+			<div class="col-8">
+				<div class="form">
+					<div class="field">
+						<label for="colorSelect">Choose marker color</label>
+						<select id="colorSelect">
+							<option value="0" selected>Blue</option>
+							<option value="1">Red</option>
+							<option value="2">Yellow</option>
+							<option value="3">Black</option>
+							<option value="4">Violet</option>
+							<option value="5">Green</option>
+						</select>
+						<button type="button" id="refillMarker">Refill</button>
+					</div>
+
+					<div class="field">
+						<label for="message">Type your message here:</label>
+						<input type="text" id="message">
+						<button type="button" id="writeMessage">Write</button>
+					</div>
+
+					<div id="markerShow"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="js/main.js"></script>
+</body>
+</html>

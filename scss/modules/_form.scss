@@ -1,0 +1,53 @@
+.form {
+    background: rgba(255, 255, 255, .8);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.field {
+    clear: both;
+    
+    input,
+    select,
+    button {
+        font: 300 16px $text;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    select {
+        @include size(150px, 30px);
+        margin-bottom: 10px;
+        cursor: pointer;
+        float: left;
+        padding: 0 5px;
+    }
+
+    input {
+        @include size(70%, 30px);
+        padding: 0 10px;
+        margin-right: 10px;
+    }
+
+    button {
+        @include size(25%, 30px);
+        cursor: pointer;
+        font-weight: 700;
+        background: #9c0051;
+        color: #fff;
+        float: right;
+        transition: all .3s;
+
+        &:hover {
+            background: #ff1d89;
+        }
+    }
+}
+
+#markerShow {
+    margin-top: 10px;
+    font: 35px/1 $marker;
+}

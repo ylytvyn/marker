@@ -1,0 +1,50 @@
+#marker {
+    @include size(200px, 345px);
+    position: relative;
+    margin: 0 auto;
+}
+
+.marker {
+    &__fill {
+        @include size(17%, 41%);
+        @include pos($l: 51%, $b: 36%);
+    }
+
+    &__color {
+        @include size(170%, 100%);
+        @include pos($r: 0, $b: 0);
+        transition: all .3s;
+        background-color: currentColor;
+        transform: rotate(20deg);
+    }
+
+    &__img {
+        @include size(100%);
+        background: url('../images/marker.png') no-repeat;
+        position: relative;
+    }
+
+    &--blue {
+        color: #5784BA;
+    }
+
+    &--red {
+        color: #C54B6C;
+    }
+
+    &--yellow {
+        color: #E8D595;
+    }
+
+    &--black {
+        color: #000;
+    }
+
+    &--violet {
+        color: #A15D98;
+    }
+
+    &--green {
+        color: #98D4BB;
+    }
+}
